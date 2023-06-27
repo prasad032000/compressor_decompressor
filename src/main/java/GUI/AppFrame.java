@@ -63,7 +63,7 @@ public class AppFrame extends JFrame implements ActionListener{
         }
         
         if(e.getSource()==decompressButton){
-            System.out.println("Hello Prasad, in thr decompression");
+            System.out.println("Hello Prasad, in the decompression");
             JFileChooser fileChooser=new JFileChooser();
             int response=fileChooser.showSaveDialog(null);
             if(response==JFileChooser.APPROVE_OPTION){
