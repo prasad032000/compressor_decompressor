@@ -7,7 +7,6 @@ package GUI;
 import comp_decomp.compressor;
 import comp_decomp.decompressor;
 import java.awt.Color;
-import static java.awt.Color.red;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -27,7 +26,7 @@ public class AppFrame extends JFrame implements ActionListener{
     
     AppFrame(){
         
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         
         compressButton =new JButton("Select file to Compress");
         compressButton.setBounds(20,100,200,30);
@@ -40,8 +39,9 @@ public class AppFrame extends JFrame implements ActionListener{
         this.add(compressButton);
         this.add(decompressButton);
         this.setSize(1000,500);
-        this.getContentPane().setBackground(Color.green);
+        this.getContentPane().setBackground(Color.black);
         this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     
     @Override
